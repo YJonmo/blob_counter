@@ -3,6 +3,9 @@ import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 from collections import deque
 
+
+# primary source:
+# https://github.com/scikit-image/scikit-image/blob/0e35d8040d0b0bb409de41f3c0f024f941e09d8a/skimage/measure/_find_contours.py#L10
 def pre_process(img:np.ndarray, is_noisy:bool=False, kernel_size:int=7, thresh:int=128)-> np.ndarray:
     # img = img[:,:,0]
     img = img.astype(np.float64)
