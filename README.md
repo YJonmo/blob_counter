@@ -1,17 +1,15 @@
-### Initial Setup
+## Info
 
-This is a demo for counting simple blobs in an image using three methods in python and one methods in python+Cpp.
+This is a demo for counting simple blobs in an image using three methods in python and one method in python+Cpp.
 
 The python methods include:
 - Contours (numpy based)
-- Laplasian of Gaussian Filters 
+- Laplacian of Gaussian Filters 
 - Difference of Gaussian Filters 
 
 
 
-The Python+Cpp method is primarry written in Cpp and using Pybind11 it is callable in Python. The Cpp code uses `cv::SimpleBlobDetector` to find the blobs.
-
-
+The Python+Cpp method is primarily written in Cpp and using Pybind11 it is callable in Python. The Cpp code uses `cv::SimpleBlobDetector` to find the blobs.
 ### Installation
 
 Clone the repository:
