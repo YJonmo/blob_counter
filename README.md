@@ -49,6 +49,8 @@ To call the Cpp code from Python, use following steps to build the Cpp module ca
 
 `cd ../`
 
+And run the blob counter:
+
 `python binding.py`
 
 
