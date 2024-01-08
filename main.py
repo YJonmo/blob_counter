@@ -50,10 +50,9 @@ if __name__ == '__main__':
     thread_list[2] = Thread(target=worker_function, args=(get_gaussian_blobs, result_queue, processed_img, args.min_sigma, args.max_sigma, methods[2]), 
                                                     kwargs={}, daemon=True, name="log_thread", group=None)
 
-    for thread in thread_list:
-        thread.start()    
-    for thread in thread_list:
-        thread.join()
+    [thread.start() for thread in thread_list]
+    [thread.join()  for thread in thread_list]
+
 
     # %% download the results
     blobs = [[]]*len(thread_list)
